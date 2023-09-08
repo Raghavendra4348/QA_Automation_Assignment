@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="tests" >
+    <test verbose="2" preserve-order="true" name="C:/Users/Raghavendra/IdeaProjects/QA_Automation_Assignment/src/test/java/org/example/DT/LoginPage/ChromeTest.java">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="Url" value="https://dev.deepthought.education/login"></parameter>
+        <classes>
+            <class name="org.example.DT.LoginPage.ChromeTest">
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="DTLoginTest"/>
+                    <include name="ValidateData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Raghavendra/IdeaProjects/QA_Automation_Assignment/src/test/java/org/example/DT/LoginPage/EdgeTest.java">
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="Url" value="https://dev.deepthought.education/login"></parameter>
+        <classes>
+            <class name="org.example.DT.LoginPage.EdgeTest">
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="DTLoginTest"/>
+                    <include name="ValidateData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
